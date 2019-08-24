@@ -1,0 +1,4 @@
+targets, factors
+pnr, (pnr & !sug & srp) | (!pnr & !sug & srp)
+sug, (!sug & !pnr & srp) | (!sug & pnr & srp) | (sug & pnr & !srp)
+srp, (srp & pnr & !sug) | (!srp & pnr & !sug)

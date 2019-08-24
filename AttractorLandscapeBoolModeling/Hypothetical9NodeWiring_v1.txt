@@ -1,0 +1,10 @@
+targets, factors
+CG44247, (CG44247 & Hr38) | (CG44247 & !Hr38)
+Hr38, (Hr38 & !CG44247 & !lola) | (Hr38 & CG44247 & !lola) | (Hr38 & !CG44247 & lola)
+Pdp1, (Pdp1 & !scro & !CG9650 & Tet & !l3neo38 & Hr38 & !lola)
+CG9650, (CG9650 & !Pdp1)
+Tet, (Tet & !CG9650 & l3neo38 & lola & !Pdp1) | (Tet & !CG9650 & l3neo38 & !lola & !Pdp1) | (Tet & !CG9650 & !l3neo38 & !lola & !Pdp1)
+lola, (!lola & Tet)
+l3neo38, (!l3neo38 & !crol & !lola & Tet) | (!l3neo38 & crol & !lola & Tet) | (!l3neo38 & crol & lola & !Tet)
+crol, (crol & !l3neo38 & lola) | (crol & lola) | (!l3neo38 & lola)
+scro, (!scro & CG9650) | (scro & !CG9650)

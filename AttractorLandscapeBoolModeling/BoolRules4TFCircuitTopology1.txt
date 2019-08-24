@@ -1,0 +1,5 @@
+targets, factors
+lola, (lola & !Tet)
+Pdp1, (Pdp1 & !lola & SoxN & !Tet) | (!Pdp1 & !lola & SoxN & !Tet)
+SoxN, (SoxN & !Pdp1 & lola) | (SoxN & !Pdp1 & !lola)
+Tet, (Tet & SoxN & !Pdp1 & lola) | (Tet & SoxN & !Pdp1 & !lola)
